@@ -11,3 +11,6 @@ algorand = AlgorandClient.default_local_net()
 dispenser = algorand.account.dispenser()
 # KMD is key management deamon which is like your wallet
 print(dispenser.address)
+
+creator = algorand.account.random()
+print(creator.address)
